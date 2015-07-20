@@ -1,7 +1,14 @@
 parameters:
-#  werkint_policy.example.class:
-#    Werkint\Bundle\VoterBundle\Example
+  werkint_voter.poller.class:
+    Werkint\Bundle\VoterBundle\Service\Poller
+  werkint_voter.voterstorage.class:
+    Werkint\Bundle\VoterBundle\Service\VoterStorage
 
 services:
-#  werkint_policy.example:
-#    class: %werkint_policy.example.class%
+  werkint_voter.poller:
+    class: %werkint_voter.poller.class%
+    arguments:
+      - @werkint_voter.voterstorage
+
+  werkint_voter.voterstorage:
+    class: %werkint_voter.voterstorage.class%

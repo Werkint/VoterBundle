@@ -1,6 +1,8 @@
 <?php
 namespace Werkint\Bundle\VoterBundle\Service\Vote;
 
+use Werkint\Bundle\VoterBundle\Service\Action\ActionInterface;
+
 /**
  * Голос за заявку
  *
@@ -8,4 +10,14 @@ namespace Werkint\Bundle\VoterBundle\Service\Vote;
  */
 interface VoteInterface
 {
+    /**
+     * @return ActionInterface
+     */
+    public function getAction();
+
+    /**
+     * @param ActionInterface $action
+     * @return $this
+     */
+    public function setAction(ActionInterface $action);
 }
