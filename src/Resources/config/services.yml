@@ -1,0 +1,7 @@
+parameters:
+#  werkint_policy.example.class:
+#    Werkint\Bundle\VoterBundle\Example
+
+services:
+#  werkint_policy.example:
+#    class: %werkint_policy.example.class%

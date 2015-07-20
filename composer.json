@@ -1,0 +1,23 @@
+{
+    "name": "werkint/voter-bundle",
+    "type": "symfony-bundle",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Bogdan Yurov",
+            "email": "bogdan@yurov.me"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "*",
+        "werkint/framework-extra-bundle": "*",
+
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Werkint\\Bundle\\VoterBundle\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
